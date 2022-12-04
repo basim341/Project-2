@@ -1,0 +1,23 @@
+{
+  "name": "project-1-tora-industries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basim341/Project-2.git"
+  },
+  "author": "basim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basim341/Project-2/issues"
+  },
+  "homepage": "https://github.com/basim341/Project-2#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
