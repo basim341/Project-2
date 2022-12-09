@@ -19,8 +19,13 @@ app.get(`/aboutus`, (req, res) => {
   res.render(`aboutus.html`)
  })
 
-// app.listen(port, hostname, () => {
-  // console.log(`Server running at http://${hostname}:${port}/`);
-// }); 
-app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully `));
+
+//  Use this code to test the app on LOCALHOST
+app.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+}); 
+
+
+// Use this code to DEPLOY the app
+// app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully `));
   
