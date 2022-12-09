@@ -18,7 +18,7 @@ app.set('views', './views')
 app.get('/', (req, res) => {
   res.render(`homepage.pug`)
 })
-app.get(`/aboutus`(req, res) => {
+app.get(`/aboutus`, (req, res) => {
   res.render(`aboutus.pug`)
  })
 
