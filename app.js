@@ -5,7 +5,7 @@ const app = express()
 const path = require('path')
 const port = 80;
 app.use('/static', express.static(path.join(__dirname, 'public')))
-app.set('view engine', 'pug') 
+// app.set('view engine', 'pug') 
 app.set('views', path.join(__dirname, 'views'))
 app.set('views', './views')
 
@@ -16,10 +16,10 @@ app.set('views', './views')
 
 // GET REQUESTS 
 app.get('/', (req, res) => {
-  res.render(`homepage.pug`)
+  res.render(`homepage.html`)
 })
 app.get(`/aboutus`, (req, res) => {
-  res.render(`aboutus.pug`)
+  res.render(`aboutus.html`)
  })
 
 // app.listen(port, hostname, () => {
