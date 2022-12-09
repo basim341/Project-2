@@ -6,12 +6,9 @@ const path = require('path')
 const port = 80;
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.use('/static', express.static(path.join(__dirname, 'static')))
+app.use('/static', express.static('static'))
 // app.set('view engine', 'pug') 
 app.set('views', path.join(__dirname, 'views'))
-app.set('views', './views')
-// app.use()
- 
 
 
 // GET REQUESTS 
