@@ -22,8 +22,8 @@ app.get(`/aboutus`, (req, res) => {
   res.render(`aboutus.html`)
  })
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-}); 
-// app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully `));
+// app.listen(port, hostname, () => {
+  // console.log(`Server running at http://${hostname}:${port}/`);
+// }); 
+app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully `));
   
