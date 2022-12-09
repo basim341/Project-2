@@ -13,4 +13,5 @@ text-decoration: none;    }
 .header{ float: left;
 text-decoration: inherit;
 display: flex;
-justify-content: center; }
+-ms-flex-align: center;
+background-color: burlywood; }
