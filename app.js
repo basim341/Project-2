@@ -6,20 +6,24 @@ const path = require('path')
 const port = 80;
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'pug') 
-app.set('Views', path.join(__dirname, 'Views'))
-app.set('Views', './Views')
+app.set('views', path.join(__dirname, 'views'))
+app.set('views', './views')
 
 // app.use(express.static(`Views`))
 
+ 
 
 
-
-// GET REQUESTS
+// GET REQUESTS 
 app.get('/', (req, res) => {
   res.render(`homepage.pug`)
 })
+app.get(`/aboutus`(req, res) => {
+  res.render(`aboutus.pug`)
+ })
 
-// app.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// }); 
-app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully 341`));
+app.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+}); 
+// app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully `));
+  
