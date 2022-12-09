@@ -1,7 +1,6 @@
 const http = require('http');
 const express = require(`express`)
 const hostname = '127.0.0.1';
-const port = 80;
 const app = express()
 const path = require('path')
 // app.use('/static', express.static(path.join(__dirname, 'public')))
@@ -19,6 +18,4 @@ app.get('/', (req, res) => {
   res.render(`homepage.pug`)
 })
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.listen( process.env.PORT || 80, ()=> console.log(`server is running successfully`));
