@@ -1,0 +1,1 @@
+// alert(`Note: This is an imaginary website and any stated facts or figures are not true`)
