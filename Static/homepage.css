@@ -12,7 +12,7 @@ font-family: 'Baloo Thambi 2', cursive; }
 
 
     .navbar{
-        background-color: rgb(143, 143, 226);
+        background-color: rgb(59, 59, 65);
         height: 5rem;
         width: 100vw;
         display: flex;
@@ -24,85 +24,106 @@ font-family: 'Baloo Thambi 2', cursive; }
         height: 2rem;
         width: auto;
         transition: 0.5s all ease-in-out;
+        vertical-align: center ;
         
     }
     .navbar img:hover{
         transform: scale(1.2);
         
     }
-    /* MOBILE DISPLAY CSS */
-    @media screen and (max-width: 400px) , screen  and (max-height: 900px) {
 
-        .navbar{
-            z-index: -1;
-        }
-#m-container {
-    
-    align-items: flex-end;
-    flex-direction: column;
-    margin: 0rem 0rem 0rem 0rem;
-    position: absolute;
-    right: -5rem;    
-    transition: 0.5s all ease; 
-    display: none;
-    font-family: 'Baloo Thambi 2', cursive;
-    transition: all 0.5s ease;
-}
-.hidden {
+    .bar {
+        display: block;
+        width: 1.2rem;
+        height: 0.18rem;
+        margin: 0.3rem auto;
+        transition:  all 0.3s ease-in-out;
+        background-color: white;
+    }
+    .btn {
+        float: right;
+        cursor: pointer;}
+
+        
+    .hidden {
+    filter: blur(5px);
     opacity: 0;
     transition: all 1s;
+    transform: translate(-100%);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .show {
     opacity: 1;
-}
+    filter: blur(0);
+    transform: translate(0%);}
 
-
-
-
-#sidebarbtn  {
-    content: url(/content/sidebar\ bars.png);
-    height: 1.5rem;
-    width: auto;
-    position: relative;
-    bottom: 3.5rem;
-    right: 1rem;
-    display: flex;
-    align-items: flex-end;
-    float: right;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px ;
-    z-index: -0.5 ;
-}
-#sidebarbtn:checked {
-    content: url(/content/Close.jpg);
-}
-#sidebarbtn:checked ~ #m-container{
-    right: 2rem;
     
-}
-}
+    .sidebar ul  {
+        position: fixed;
+        list-style: none;
+        float: right;
+        font-size: 1.2rem;
+            }
 
-#heading1 {
-    font-family: 'Pacifico', cursive;
-    height: 10rem;
-    font-size: 5rem;
-display: flex;
-    justify-content: center;
-    width: auto;
-    z-index: -1;
-    
-}
-#s {
-    font-size: 2rem;
+    .btn.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .btn.active .bar:nth-child(1){
+        transform: translateY(0.5rem) rotate(45deg)  ;
+    }
+    .btn.active .bar:nth-child(3){
+        transform: translateY(-0.5rem)  rotate(-45deg)   ;
+    }
+
+    #heading1 {
+        font-family: 'Pacifico', cursive;
+        height: 10rem;
+        font-size: 5rem;
     display: flex;
-    justify-content: center;
-}
-#info {
-    display: flex;
-    text-align: center;
+        justify-content: center;
+        width: auto;
+        z-index: -1;
+        
+    }
+    #s {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    #info {
+        background-color: black;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+        border-bottom: 0.1px solid grey;
+        
+    }
     
-    font-size: 1.2rem;
-}
+        
+    #teamheading {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    #saleembhai img {
+        display: block;
+        width: 50%;
+       
+        height: auto;
+        margin: auto;
+       margin-top: 2rem; 
+    }
+    #saleembhai p {
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+
+
+
+
 
 
