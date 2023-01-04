@@ -1,9 +1,12 @@
 /* CSS RESET CODE !!!!  */
 body{padding: 0px;
     margin: 0px;  
-    color: black;
+    color: white;
+    background-color: black;
     text-decoration: none;  
-    list-style: none;}
+    list-style: none;
+font-family: 'Baloo Thambi 2', cursive; }
+
     a{text-decoration: inherit;
     color: inherit;}
 
@@ -42,8 +45,19 @@ body{padding: 0px;
     right: -5rem;    
     transition: 0.5s all ease; 
     display: none;
-    
+    font-family: 'Baloo Thambi 2', cursive;
+    transition: all 0.5s ease;
 }
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+
 
 
 #sidebarbtn  {
@@ -64,7 +78,31 @@ body{padding: 0px;
     content: url(/content/Close.jpg);
 }
 #sidebarbtn:checked ~ #m-container{
-    right: 1rem;
+    right: 2rem;
     
 }
 }
+
+#heading1 {
+    font-family: 'Pacifico', cursive;
+    height: 10rem;
+    font-size: 5rem;
+display: flex;
+    justify-content: center;
+    width: auto;
+    z-index: -1;
+    
+}
+#s {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+#info {
+    display: flex;
+    text-align: center;
+    
+    font-size: 1.2rem;
+}
+
+
