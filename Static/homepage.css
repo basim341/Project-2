@@ -33,22 +33,21 @@ body{padding: 0px;
         .navbar{
             z-index: -1;
         }
-.m-container {
-    border-left: 1rem;
-    border-color: grey;
-    display: flex;
+#m-container {
+    
     align-items: flex-end;
     flex-direction: column;
-    
     margin: 0rem 0rem 0rem 0rem;
     position: absolute;
     right: -5rem;    
-    transition: 0.5s all ease;
+    transition: 0.5s all ease; 
+    display: none;
+    
 }
 
 
-#sidebarbtn {
-    content: url(../content/sidebar\ bars.png);
+#sidebarbtn  {
+    content: url(/content/sidebar\ bars.png);
     height: 1.5rem;
     width: auto;
     position: relative;
@@ -57,14 +56,15 @@ body{padding: 0px;
     display: flex;
     align-items: flex-end;
     float: right;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px ;
+    z-index: -0.5 ;
 }
-
-#sidebarbtn:checked  {
-    content: url(../content/Close.jpg);}  
+#sidebarbtn:checked {
+    content: url(/content/Close.jpg);
+}
+#sidebarbtn:checked ~ #m-container{
+    right: 1rem;
     
-#sidebarbtn:checked ~ .m-container {
-    right: 2rem;
 }
-
-
 }
