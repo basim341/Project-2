@@ -1,0 +1,11 @@
+/* CSS RESET CODE !!!!  */
+body{padding: 0px;
+    margin: 0px;  
+    color: white;
+    background-color: black;
+    text-decoration: none;  
+    list-style: none;
+font-family: 'Baloo Thambi 2', cursive; }
+
+    a{text-decoration: inherit;
+    color: inherit;}

@@ -5,7 +5,7 @@
     btn.addEventListener(`click`, () => {
         btn.classList.toggle(`active`)
         sidebar.classList.toggle(`active`)
-        
+
     }
     
     )
@@ -23,3 +23,15 @@
 
  const hiddenelements = document.querySelectorAll(`.hidden`) 
  hiddenelements.forEach((el) => observer.observe(el));
+
+ const btn1 =  () => {
+    let info = document.getElementById(`sidebar1`).style
+    if (info.transform != `translateY(150%)`){
+        info.transition = `all 0.5s ease-in-out`       
+        info.transform =`translateY(150%)` 
+    
+    }
+        else {
+                info.transform = `translateY(-150%)`
+        }
+    }

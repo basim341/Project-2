@@ -16,9 +16,15 @@ app.use('/static', express.static(path.join(__dirname, 'Static')))
 app.get('/', (req, res) => {
   res.render(`homepage.html`)
 })
-app.get(`/aboutus`, (req, res) => {
-  res.render(`aboutus.html`)
+app.get(`/applynow`, (req, res) => {
+  res.render(`applynow.html`)
  })
+app.get(`/bonuscontent`) , (req, res) => {
+  res.render(`bonuscontent.html`)
+}
+app.get(`/ourteam`) , (req, res) => {
+  res.render(`ourteam.html`)
+}
 
 
 //  Use this code to test the app on LOCALHOST
