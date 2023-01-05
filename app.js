@@ -6,25 +6,25 @@ const path = require('path')
 const port = 80;
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-app.use('/content', express.static(path.join(__dirname, 'content')))
+app.set('views', path.join(__dirname, 'views'))
 // app.use(express.static('Static'));
 // app.set('view engine', 'pug') 
-app.set('views', path.join(__dirname, 'views'))
+app.use('/content', express.static(path.join(__dirname, 'content')))
 app.use('/static', express.static(path.join(__dirname, 'Static')))
 
 // GET REQUESTS 
 app.get('/', (req, res) => {
   res.render(`homepage.html`)
 })
+app.get('/ourteam' , (req, res) => {
+  res.render(`ourteam.html`)
+})
 app.get(`/applynow`, (req, res) => {
   res.render(`applynow.html`)
  })
-app.get(`/bonuscontent`) , (req, res) => {
+app.get(`/bonuscontent` , (req, res) => {
   res.render(`bonuscontent.html`)
-}
-app.get(`/ourteam`) , (req, res) => {
-  res.render(`ourteam.html`)
-}
+})
 
 
 //  Use this code to test the app on LOCALHOST
