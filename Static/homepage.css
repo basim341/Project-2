@@ -54,6 +54,12 @@ font-family: 'Baloo Thambi 2', cursive; }
     padding-right: 1rem;
 }
 
+  .hidden img {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+    
+  
 .show {
     opacity: 1;
     filter: blur(0);
@@ -81,11 +87,10 @@ font-family: 'Baloo Thambi 2', cursive; }
         font-family: 'Pacifico', cursive;
         height: 10rem;
         font-size: 5rem;
-    display: flex;
+        display: flex;
         justify-content: center;
         width: auto;
         z-index: -1;
-        
     }
     #s {
         font-size: 2rem;
@@ -101,26 +106,25 @@ font-family: 'Baloo Thambi 2', cursive; }
         
     }
     
-        
+    /* OUR TEAM CSS      */
     #teamheading {
         text-align: center;
         font-size: 2rem;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
-    #saleembhai img {
+    .member img {
         display: block;
         width: 50%;
-       
-        height: auto;
+        height: 10rem;
         margin: auto;
        margin-top: 2rem; 
     }
-    #saleembhai p {
+    .member p {
         margin-top: 0px;
         text-align: center;
     }
-    
+     
 
 
 
