@@ -111,28 +111,30 @@ body{padding: 0px;
             margin-bottom: 2rem;
         }
         #form{
-            border-top: 0.1rem solid white;
+            border: 0.1rem solid white;
             padding-top: 2rem;
             padding-left: 5rem;
+            padding-bottom: 2rem;
+
         }
-        #form input{
+        #form input , textarea{
             display: flex;
             border-radius: 0.5rem;
             width: 50vw;
             
         }
-        #something{
-            padding-top: 5rem;
-        }
+        
         .submit{
-            background-color: white;
-            color: black;
+            justify-content: center;
+            background-color: grey;
+            color: white;
             font-family: 'Baloo Thambi 2', cursive; 
-            width: 9rem;
             border-radius: 0.3rem;
             margin-top: 1rem;
         }
-
+        #something , #adress{
+            padding-bottom: 4rem;
+        }
     #translate {
         transform: translateY(-12%);
     }
