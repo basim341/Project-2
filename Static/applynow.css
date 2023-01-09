@@ -96,59 +96,43 @@ body{padding: 0px;
     .btn.active .bar:nth-child(3){
         transform: translateY(-0.5rem)  rotate(-45deg)   ;
     }
-
-    #heading1 {
-        font-family: 'Pacifico', cursive;
-        height: 10rem;
-        font-size: 5rem;
-        display: flex;
-        justify-content: center;
-        width: auto;
-    }
-    #s {
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-    }
-    #info {
-        background-color: black;
-        text-align: center;
-        font-size: 1.2rem;
-        padding-bottom: 3rem;
-        border-bottom: 0.1px solid grey;
+        footer{
+            border-top: 0.1rem solid grey;
+            padding-top: 1.5rem;
+        }
         
-    }
-    
-    /* OUR TEAM CSS      */
-    .sidebar{
-        margin: 0px;
-    }
+        #applynow {
+            font-size: 2rem;
+            text-align: center;
+            /* margin-top: 0rem; */
+        }        
+        #f-info{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        #form{
+            border-top: 0.1rem solid white;
+            padding-top: 2rem;
+            padding-left: 5rem;
+        }
+        #form input{
+            display: flex;
+            border-radius: 0.5rem;
+            width: 50vw;
+            
+        }
+        #something{
+            padding-top: 5rem;
+        }
+        .submit{
+            background-color: white;
+            color: black;
+            font-family: 'Baloo Thambi 2', cursive; 
+            width: 9rem;
+            border-radius: 0.3rem;
+            margin-top: 1rem;
+        }
 
-    
-    #h2 {
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+    #translate {
+        transform: translateY(-12%);
     }
-    .member img {
-        display: block;
-    width: 50%;
-    height: auto;
-    margin: auto;
-    margin-top: 2rem; 
-}
-.member p {
-    text-align: center;
-}
-#translate {
-    transform: translateY(-12%);
-    position: relative;
-}
-footer{
-        border-top: 0.1rem solid grey;
-        padding-top: 1.5rem;
-    }
-    
-    

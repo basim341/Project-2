@@ -39,6 +39,6 @@
     }
         else {
                 info.transform = `translateY(-150%)`
-                div.transform = `translateY(-10%)`
+                div.transform = `translateY(-12%)`
         }
     }
