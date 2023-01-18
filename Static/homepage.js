@@ -42,3 +42,40 @@
                 div.transform = `translateY(-12%)`
         }
     }
+
+    const btnteam =  () => {
+        let info = document.getElementById(`sidebar1`).style
+        let div = document.getElementById(`translate`).style
+        if (info.transform != `translateY(150%)`){
+            info.transition = `all 0.5s ease-in-out`       
+            info.transform =`translateY(150%)`
+            div.transform = `translateY(0%)` 
+            div.transition = `all 0.5s ease-in-out`       
+        
+    
+        
+        }
+            else {
+                    info.transform = `translateY(-150%)`
+                    div.transform = `translateY(-10%)`
+            }
+        }
+
+
+        // const btn1 =  () => {
+        //     let info = document.getElementById(`sidebar1`).style
+        //     let div = document.getElementById(`translate`).style
+        //     if (info.transform != `translateY(150%)`){
+        //         info.transition = `all 0.5s ease-in-out`       
+        //         info.transform =`translateY(150%)`
+        //         div.transform = `translateY(0%)` 
+        //         div.transition = `all 0.5s ease-in-out`       
+            
+        
+            
+        //     }
+        //         else {
+        //                 info.transform = `translateY(-150%)`
+        //                 div.transform = `translateY(-12%)`
+        //         }
+        //     }

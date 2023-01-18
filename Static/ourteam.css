@@ -116,7 +116,7 @@ font-family: 'Baloo Thambi 2', cursive; }
 }            
 
 #translate {
-    transform: translateY(-12%);
+    transform: translateY(-10%);
 }
 footer{
     border-top: 0.1rem solid grey;
